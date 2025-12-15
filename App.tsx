@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { HashRouter as Router } from 'react-router-dom';
 import { 
   Armchair, 
   Calendar, 
