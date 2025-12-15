@@ -28,13 +28,14 @@ jobs:
         run: npm run build
 
       # Deploy to GitHub Pages (force overwrite)
-      -- name: Deploy to GitHub Pages
+     - name: Deploy to GitHub Pages
   uses: peaceiris/actions-gh-pages@v3
   with:
     github_token: ${{ secrets.GITHUB_TOKEN }}
     publish_dir: ./dist
-    force_orphan: true   # creates a fresh branch
-    keep_files: false    # deletes existing files before push
+    force_orphan: true      # ensures branch is recreated
+    keep_files: false       # wipes old files before pushing
     user_name: "github-actions[bot]"
     user_email: "github-actions[bot]@users.noreply.github.com"
+
 
