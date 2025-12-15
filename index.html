@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SunNomad - Live Comfortably in Cape Town</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Lato', 'sans-serif'],
+              heading: ['Montserrat', 'sans-serif'],
+              body: ['Lato', 'sans-serif'],
+            },
+            colors: {
+              primary: '#EF561C', // Primary 1: Sunset Orange
+              'primary-dark': '#C44216', // Accent 2: Deep Burnt Orange (Hover)
+              'primary-light': '#F7B770', // Accent 1: Light Warm Orange
+              secondary: '#4A4A49', // Primary 2: Charcoal Grey
+              background: '#FEFCF1', // Secondary 1: Soft Cream
+              'accent-gold': '#EF9229', // Secondary 2: Warm Orange-Gold
+              'neutral-light': '#DAD5C6', // Accent 3: Soft Sand Grey
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Lato', sans-serif;
+        color: #4A4A49;
+        background-color: #FEFCF1;
+      }
+      h1, h2, h3, h4, h5, h6, button {
+        font-family: 'Montserrat', sans-serif;
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/client": "https://aistudiocdn.com/react-dom@^19.2.0/client",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
